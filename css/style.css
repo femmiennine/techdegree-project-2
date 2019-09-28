@@ -12,12 +12,14 @@
 }
 
 body {
+  font-family: "Roboto Slab";
+  font-size: 0.8rem;
   color: black;
 }
 
 h2 {
   font-family: "manjari";
-  font-size: 0.8em;
+  font-size: 1.5rem;
   font-weight: bold;
   padding: 5px 0;
   margin-bottom: 30px;
@@ -26,8 +28,6 @@ h2 {
 }
 
 h3 {
-  font-family: "Roboto Slab";
-  font-size: 0.8em;
   font-weight: bold;
   padding: 5px 0;
   margin: 10px 0;
@@ -36,7 +36,6 @@ h3 {
 
 p {
   color: #4e4d4d;
-  font-family: "Roboto Slab";
   font-size: 0.7rem;
   text-align: center;
   padding: 0 30px;
@@ -51,9 +50,9 @@ a:hover {
   color: #a9a9a9;
 }
 
-/* a:visited {
+a:visited {
   color: grey;
-} */
+}
 
 /* Header */
 .main-header {
@@ -65,7 +64,7 @@ a:hover {
 .name {
   color: #000000;
   font-family: "feronia";
-  font-size: 1.6rem;
+  font-size: 2rem;
   font-weight: bold;
   letter-spacing: 3px;
   text-decoration: none;
@@ -109,7 +108,7 @@ li {
   color: black;
   display: block;
   font-family: "manjari";
-  font-size: 0.8em;
+  font-size: 1.2rem;
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
@@ -190,6 +189,10 @@ table {
   padding: 20px 10px;
 }
 
+.hide-menu {
+  display: none;
+}
+
 .footer-top {
   float: right;
   text-transform: uppercase;
@@ -199,16 +202,13 @@ table {
   display: inline-block;
 }
 
-/* Media Query */
-@media only screen and (max-width: 767px) {
-  .hide-menu {
-    display: none;
-  }
-}
-
 @media only screen and (min-width: 768px) {
   .footer-top {
     display: none;
+  }
+
+  .hide-menu {
+    display: initial;
   }
 
   nav {
@@ -309,9 +309,10 @@ table {
 
   .header-profile {
     margin-top: 20px;
-    overflow: hidden;
+    overflow: initial;
     padding: 12px 0;
   }
+
   h1 a {
     float: left;
     margin-left: 30px;
@@ -321,7 +322,6 @@ table {
 
   nav {
     float: right;
-    overflow: hidden;
     margin-left: 20px;
     padding: 0;
   }
@@ -337,7 +337,7 @@ table {
   }
 
   a {
-    margin: 0 20px;
+    margin: 0 10px;
     padding: 0 20px;
   }
 
